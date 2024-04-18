@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="MySite.css">    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Raja Gopalan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home-section">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio-section">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="home-section"id="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1>Hello, I'm</h1>
+                    <h2 class="mb-4">Raja Gopalan</h2>
+                    <p>A Software Engineer with 3 years of Experience.</p>
+                    <div class="mt-5">
+                        <a href="#contact" class="btn btn-primary mr-3">Hire Me</a>
+                        <a href="MyResume.docx" download class="btn btn-outline-light">Get Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="portfolio-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Images/Designer.jpg" class="card-img-top" alt="Web Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Design</h5>
+                            <p class="card-text">Designing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Images/Developer.jpg" class="card-img-top" alt="Web Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Images/SQL.jpg" class="card-img-top" alt="SQL Backend">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL Backend</h5>
+                            <p class="card-text">Backend</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 about-content">
+                    <h2>About Me</h2>
+                    <p>GeeksforGeeks is a leading platform that provides computer science resources and coding challenges for programmers and technology enthusiasts, along with interview and exam preparations for upcoming aspirants. With a strong emphasis on enhancing coding skills and knowledge, it has become a trusted destination for over 12 million plus registered users worldwide. The platform offers a vast collection of tutorials, practice problems, interview tutorials, articles, and courses, covering various domains of computer science.</p>
+                    <p>Our exceptional mentors hailing from top colleges & organizations have the ability to guide you on a journey from the humble beginnings of coding to the pinnacle of expertise. Under their guidance watch your skills flourish as we lay the foundation and help you conquer the world of coding.</p>
+                </div>
+                <div class="col-md-6 about-image">
+                    <img src="Images/About-Me.png" alt="About Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services my-5" id="Skills">
+        <div class="container">
+            <div class="services-heading">
+                <h1 class="my-Services-heading text-center">My Skills</h1>
+            </div>
+            <div class="row center-row">
+                <div class="col-md-3">
+                    <div class="skill">
+                        <div class="skill-name">HTML</div>
+                        <div class="progress-bar" style="--percentage: 100%;" data-percentage="100"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="progress-bar" style="--percentage: 75%;" data-percentage="75"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">SQL</div>
+                        <div class="progress-bar" style="--percentage: 90%;" data-percentage="80"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">CSS</div>
+                        <div class="progress-bar" style="--percentage: 90%;" data-percentage="80"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Dot Net</div>
+                        <div class="progress-bar" style="--percentage: 80%;" data-percentage="80"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Web API</div>
+                        <div class="progress-bar" style="--percentage: 55%;" data-percentage="65"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><br />
+
+    <!-- Contact Me section -->
+    <section class="contact" id="contact">
+        <div class="my-5 remove-bottom-border">
+            <div class="container">
+                <div class="contact-heading text-center">
+                    <h1 class="my-Contact-heading">Contact Me</h1>
+                </div>
+                <div class="row contact-content">
+                    <div class="col-md-6">
+                        <div class="contact-form-container">
+                            <h1 class="greet-heading">Get In Touch</h1>
+                            <form class="contact-form">
+                                <input class="form-controls" type="text" placeholder="Your Name">
+                                <input class="form-controls" type="text" placeholder="Your Email">
+                                <input class="form-controls" type="text" placeholder="Your Phone">
+                                <textarea class="form-controls" placeholder="Write your message" name="message" cols="30" rows="6"></textarea>
+                                <input class="form-btn btn btn-primary" type="submit" value="Send Message">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-details">
+                            <h1 class="greet-heading">My Contact Details</h1>
+                            <div class="details">
+                                <h5 class="contact-heading">EMAIL</h5>
+                                <p class="contact-text">example@gmail.com</p>
+                            </div>
+                            <div class="details">
+                                <h5 class="contact-heading">PHONE</h5>
+                                <p class="contact-text">+91 0123456789</p>
+                            </div>
+                            <div class="details">
+                                <h5 class="contact-heading">FAX</h5>
+                                <p class="contact-text">+91 0123456789</p>
+                            </div>
+                            <div class="details">
+                                <h5 class="contact-heading">ADDRESS</h5>
+                                <p class="contact-text">San Francisco, CA</p>
+                                <p>4th Floor, 8 Lower San Francisco street, M1 50F</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-links">Home</a></li>
+                        <li><a href="#" class="footer-links">Portfolio</a></li>
+                        <li><a href="#" class="footer-links">About</a></li>
+                        <li><a href="#" class="footer-links">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="footer-list-items"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-list-items"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-list-items"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-list-items"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional, for responsive navbar toggle) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

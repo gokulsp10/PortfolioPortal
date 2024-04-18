@@ -1,0 +1,178 @@
+﻿/* Custom CSS for Navbar */
+.navbar-brand {
+    color: #fff; /* Color for the logo/name */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Color for menu links */
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #ffd700; /* Color for menu links on hover */
+    }
+
+/* Custom CSS for Home Section */
+.home-section {
+    background-image: url('Images/heroImg3.jpg'); /* Replace 'background-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #35A99C; /* Primary button color */
+    border-color: #35A99C;
+}
+
+    .btn-primary:hover {
+        background-color: #2794B3; /* Button color on hover */
+        border-color: #2794B3;
+    }
+
+/* Custom CSS for Portfolio Section */
+.portfolio-section {
+    padding: 100px 0;
+}
+
+.card {
+    height: 100%;
+}
+
+    .card img {
+        height: 200px; /* Adjust as needed */
+    }
+/* Custom CSS for About Section */
+.about-section {
+    padding: 100px 0;
+    background: linear-gradient(45deg, #363D73, #5F9EA0);
+}
+
+.about-content {
+    padding-right: 20px;
+}
+
+.about-image {
+    padding-left: 20px;
+}
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+    }
+/* Skills Section CSS*/
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.center-row {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .progress-bar::after {
+        content: attr(data-percentage) "%";
+        position: absolute;
+        top: 50%;
+        left: 2px;
+        line-height: 20px;
+        border-inline-color: white;
+        transform: translateY(-50%);
+        height: 100%;
+        background-color: #007bff;
+        animation: fill 2s ease-out forwards;
+        color: white;
+    }
+
+@keyframes fill {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--percentage);
+    }
+}
+
+.greet-heading {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 0;
+    letter-spacing: 1px;
+    color: azure;
+}
+
+.my-Contact-heading {
+    font-size: 2.5rem;
+    margin: 0;
+    color: black;
+}
+
+.form-controls {
+    width: 100%;
+    padding: 10px 0;
+    margin: 1.67rem 0;
+}
+
+.form-btn {
+    width: 100%;
+}
+
+.contact {
+    background: linear-gradient(45deg, #363D73, #2794B3);
+}
+
+.contact-heading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-text {
+    margin-bottom: 20px;
+}
+/*footer section*/
+.footer {
+    background: linear-gradient(45deg, #363D73, #5F9EA0);
+    color: #fff;
+    padding: 2rem;
+}
+
+.remove-bottom-border {
+    margin-bottom: 0 !important;
+}
+
+.footer-list-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 50%;
+    background-color: #53C8B6;
+}
+
+.footer-links {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
