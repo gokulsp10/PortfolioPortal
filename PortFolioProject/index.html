@@ -3,16 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
           integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    
+
 </head>
 
 <body>
@@ -72,7 +70,7 @@
                 <button class="btn common-btn" onclick="scrollToContact()">Hire Me</button>
                 <button class="btn ghost-btn" onclick="getResume()">Get Resume</button>
                 <!-- Hidden anchor tag for resume download -->
-                <a id="resumeLink" href="MyResume.docx" download hidden>    </a>
+                <a id="resumeLink" href="MyResume.docx" download hidden></a>
             </div>
         </div>
     </section>
@@ -86,9 +84,8 @@
             <div class="my-row">
                 <div class="my-col">
                     <div class="my-card port-card">
-                        <div class="image">
-                            <img src="./Images/Designer.jpg"
-                                 alt="Web Design Image">
+                        <div class="image" data-src="./Images/Designer.jpg">
+                            <!-- Placeholder image -->
                         </div>
                         <h3 class="greet-heading blue-text">Web Design</h3>
                         <p class="small-para blue-text">Designing</p>
@@ -96,9 +93,8 @@
                 </div>
                 <div class="my-col">
                     <div class="my-card port-card">
-                        <div class="image">
-                            <img src="./Images/Developer.jpg"
-                                 alt="Web Development Image">
+                        <div class="image" data-src="./Images/Developer.jpg">
+                            <!-- Placeholder image -->
                         </div>
                         <h3 class="greet-heading blue-text">
                             Web Development
@@ -108,15 +104,14 @@
                 </div>
                 <div class="my-col">
                     <div class="my-card port-card">
-                        <div class="image">
-                            <img src="./Images/SQL.jpg" alt="SEO Image">
+                        <div class="image" data-src="./Images/SQL.jpg">
+                            <!-- Placeholder image -->
                         </div>
                         <h3 class="greet-heading blue-text">SQL</h3>
                         <p class="small-para blue-text">Backend</p>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
 
@@ -192,7 +187,7 @@
                 <div class="skill-name">Web API</div>
                 <div class="progress-bar" style="--percentage: 55%;" data-percentage="65"></div>
             </div>
-            </div>
+        </div>
     </section>
 
     <!-- Contact me section -->
@@ -213,8 +208,8 @@
                     <textarea class="form-controls"
                               placeholder="Write your message"
                               name="message" id="" cols="30"
-                              rows="10"> 
-					</textarea>
+                              rows="10">
+				</textarea>
                     <input class="form-btn btn common-btn"
                            type="submit" value="Send Message">
                 </form>
@@ -286,6 +281,34 @@
 
     </script>
     <script src="Scripts/script.js"></script>
+    <script>
+        // Lazy loading images on scroll
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll('[data-src]');
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const callback = function (entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const image = entry.target;
+                        const src = image.getAttribute('data-src');
+                        image.src = src;
+                        observer.unobserve(image);
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(callback, options);
+
+            images.forEach(image => {
+                observer.observe(image);
+            });
+        });
+    </script>
 </body>
 
 </html>
