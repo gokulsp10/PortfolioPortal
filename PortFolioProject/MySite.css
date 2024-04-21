@@ -20,7 +20,7 @@
     color: #fff;
     padding: 100px 0;
     text-align: center;
-    height:700px;
+    height: 100vh;
 }
 
 .btn-primary {
@@ -55,7 +55,7 @@
 .about-section {
     padding: 100px 0;
     background: linear-gradient(45deg, #363D73, #5F9EA0);
-    height: 700px;
+    height: 100vh;
 }
 
 .about-content {
@@ -73,10 +73,10 @@
 /* Skills Section CSS*/
 .skill-name-section {
     padding: 100px 0;
-    height: 700px;
+    height: 100vh;
     background-image: url('Images/skills-two-bg.png');
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 .skill-name {
     font-weight: bold;
@@ -153,7 +153,7 @@ my-Services-heading {
 
 .contact {
     background: linear-gradient(45deg, #363D73, #2794B3);
-    height: 700px;
+    height: 100vh;
 }
 
 .contact-heading {

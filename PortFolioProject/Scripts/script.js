@@ -109,3 +109,8 @@ document.getElementById('form-message').addEventListener('input', function () {
         errorSpan.textContent = '';
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+});
